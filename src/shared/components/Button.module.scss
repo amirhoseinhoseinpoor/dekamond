@@ -1,0 +1,25 @@
+@use "@/styles/_variable" as *;
+@use 'sass:color';
+
+.button {
+  width: 100%;
+  background-color: $blueButtonColor;
+  color: $textButtonColor;
+  border-radius: 4px;
+  border: none;
+  padding: 0.49rem 0.8rem;
+}
+.disabledButton {
+  background-color: $disabledButtonColor;
+  color: $textButtonColor;
+  cursor: not-allowed;
+}
+.activeButton {
+  background-color: $blueButtonColor;
+  color: $textButtonColor;
+  cursor: pointer;
+  &:hover {
+    background-color: color.adjust($blueButtonColor, $lightness: -10%);
+    color: $textButtonColor;
+  }
+}

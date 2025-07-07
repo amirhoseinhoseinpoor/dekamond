@@ -1,0 +1,63 @@
+body {
+  background-color: #f8f9fa;
+}
+html {
+  position: relative;
+  height: 100%;
+}
+.form-control:focus,
+.form-select:focus{
+  box-shadow: unset;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  -moz-appearance: textfield !important;
+}
+
+// global font size
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.mediumText {
+  font-size: 17px;
+}
+.smallText {
+  font-size: 16px;
+}
+.xsmallText {
+  font-size: 14px;
+}
+@media (max-width: 980px) {
+  .title {
+    font-size: 20px;
+  }
+  .mediumText {
+    font-size: 16px;
+  }
+  .smallText {
+    font-size: 15px;
+  }
+  .xsmallText {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .mediumText {
+    font-size: 15px;
+  }
+  .smallText {
+    font-size: 14px;
+  }
+  .xsmallText {
+    font-size: 13px;
+  }
+}
